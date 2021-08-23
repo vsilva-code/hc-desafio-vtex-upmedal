@@ -1,0 +1,176 @@
+{
+  "store.home": {
+    "blocks": ["rich-text",
+      "list-context.image-list#home","tab-layout#home",
+      "search-result-layout.customQuery#sale"
+    ]
+  }, 
+  "rich-text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "*Desafio Hiring Coders Vtex - UPMedal*",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5"      
+    }
+  },
+  //início slider
+ "list-context.image-list#home": {
+    "children": ["slider-layout#home"],
+    "props": {
+      "height": 300,
+      "images": [
+        {
+          "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T182131Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=43b77ac5b4c8cec8f87d5c993189a46b942e8142e525294a817af4ae332b0e9d",
+          "mobileImage": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T182131Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=43b77ac5b4c8cec8f87d5c993189a46b942e8142e525294a817af4ae332b0e9d"
+        },
+        { "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T182247Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e7c4ac7926364299f33a208b9f27063d93bc5f0c8967ed6ab47284cb822b8e13",
+          "mobileImage": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210822%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210822T182247Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=e7c4ac7926364299f33a208b9f27063d93bc5f0c8967ed6ab47284cb822b8e13"
+        }
+      ]
+    }
+  },
+  "slider-layout#home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  //início tab layout
+  "flex-layout.row#menu": {
+    "children": [
+      "tab-layout#home"
+    ]
+  },
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home",
+      "tab-content#home"
+    ],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "sale"
+    }
+  },
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#sale",
+      "tab-list.item#corinthians",
+      "tab-list.item#palmeiras"
+    ]
+  },
+  "tab-list.item#sale": {
+    "props": {
+      "tabId": "sale",
+      "label": "Promoção",
+      "defaultActiveTab": true,
+      "blockClass": "menu"
+    }
+  },
+  "tab-list.item#corinthians": {
+    "props": {
+      "tabId": "corinthians",
+      "label": "Corinthians",
+      "blockClass": "menu"
+    }
+  },
+  "tab-list.item#palmeiras": {
+    "props": {
+      "tabId": "palmeiras",
+      "label": "Palmeiras",
+      "blockClass": "menu"
+    }
+  },
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#corinthians",
+      "tab-content.item#palmeiras"
+    ]
+  },
+  //conteúdo abas//
+
+  "tab-content.item#sale": {
+    "children": [
+     "search-result-layout.customQuery#sale","tab-content.item#corinthians","tab-content.item#palmeiras"
+    ],
+    "props": {
+      "tabId": "sale"
+    }
+  },
+  "tab-content.item#corinthians": {
+    "children": [
+           "search-result-layout.customQuery#corinthians"
+    ],
+    "props": {
+      "tabId": "corinthians"
+    }
+  },
+  "tab-content.item#palmeiras": {
+    "children": [
+      "search-result-layout.customQuery#palmeiras"
+    ],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+ 
+   // início do search result
+  "search-result-layout.customQuery#sale": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "UpMedal",
+        "mapField": "ft",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#corinthians": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "corinthians",
+        "mapField": "ft",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByBestDiscountDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "palmeiras",
+        "mapField": "ft",
+        "skusFilter": "ALL_AVAILABLE"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+
+}

@@ -1,0 +1,26 @@
+.listContainer {
+    background-color: #212121;
+    justify-content: center;
+}
+
+.listItem--itemMenu {
+    background-color: #212121;
+}
+
+ .listItem--itemMenu :global(.vtex-button) {
+    background-color:#212121;
+    color: white;
+    border: none;
+    border-radius: 0;
+}
+
+.listItemActive--itemMenu {
+    border-bottom: solid #59ff00 2px;
+}
+
+.contentContainer--tabProducts {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 30px;
+}

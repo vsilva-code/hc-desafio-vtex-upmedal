@@ -1,0 +1,21 @@
+.sliderLayoutContainer--sliderhome {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.sliderArrows--sliderhome {
+    bottom: 3px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.caretIcon--sliderhome {
+    color: white;
+    height: 13px;
+}
+
+.paginationDotsContainer--sliderhome {
+    top: 260px;
+}
