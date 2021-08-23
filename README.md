@@ -1,3 +1,2 @@
-# desafio-vtex-upmedal
-# desafio-vtex-upmedal
-# hc-desafio-vtex-upmedal
+# Desafio HC  VTEX IO - UPMedal
+
